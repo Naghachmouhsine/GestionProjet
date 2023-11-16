@@ -9,4 +9,14 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Tst</display-name>
+    <servlet-name>Tst</servlet-name>
+    <servlet-class>Tst</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Tst</servlet-name>
+    <url-pattern>/Tst</url-pattern>
+  </servlet-mapping>
 </web-app>
