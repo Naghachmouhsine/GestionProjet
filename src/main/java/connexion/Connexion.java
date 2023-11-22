@@ -8,9 +8,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class Connexion {
-	static Connection Cnx;
+	Connection Cnx;
 	String url,pilote;
-
 	public Connexion() {
 		try {
 
@@ -44,24 +43,24 @@ public class Connexion {
 		}
 
 // La fonction d'authentification pour les trois Users (Directeur, ChefProjet, Developpeur)
-    public ResultSet authenticationUser(String email, String motDePasse, String role) {
-    	
-		ResultSet res = null;
-		String req = "SELECT * FROM user WHERE Email = ? AND MotDepasse = ? AND Role = ?";
-		try {
-	        PreparedStatement st = Cnx.prepareStatement(req);
-	        st.setString(1, email);  
-	        st.setString(2, motDePasse); 
-	        st.setString(3, role); 
-	        res = st.executeQuery();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-		      return res;
-    }
-
-// La fonction existence pour les trois Users (Directeur, ChefProjet, Developpeur)
-    //	 public ResultSet UserExiste(String login, String userType) {
+//    public ResultSet authenticationUser(String email, String motDePasse, String role) {
+//    	
+//		ResultSet res = null;
+//		String req = "SELECT * FROM user WHERE Email = ? AND MotDepasse = ? AND Role = ?";
+//		try {
+//	        PreparedStatement st = Cnx.prepareStatement(req);
+//	        st.setString(1, email);  
+//	        st.setString(2, motDePasse); 
+//	        st.setString(3, role); 
+//	        res = st.executeQuery();
+//		} catch (SQLException e) {
+//			e.printStackTrace();
+//		}
+//		      return res;
+//    }
+//
+//// La fonction existence pour les trois Users (Directeur, ChefProjet, Developpeur)
+//    //	 public ResultSet UserExiste(String login, String userType) {
     //		ResultSet res = null;
 		// String req = "SELECT * FROM " + userType + " WHERE login = " + login;
     //	String req = "SELECT * FROM " + userType + " WHERE login = ?";

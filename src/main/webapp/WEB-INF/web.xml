@@ -11,19 +11,17 @@
   </welcome-file-list>
   <servlet>
     <description></description>
-    <display-name>Tst</display-name>
-    <servlet-name>Tst</servlet-name>
-    <servlet-class>Tst</servlet-class>
+    <display-name>Projet</display-name>
+    <servlet-name>Projet</servlet-name>
   </servlet>
   <servlet-mapping>
-    <servlet-name>Tst</servlet-name>
-    <url-pattern>/Tst</url-pattern>
-  </servlet-mapping>
+    <servlet-name>Projet</servlet-name>
+    <url-pattern>/Projet</url-pattern>
+   </servlet-mapping>
   <servlet>
-    <description></description>
     <display-name>Connexion</display-name>
     <servlet-name>Connexion</servlet-name>
-    <servlet-class>connexion.Connexion</servlet-class>
+    <servlet-class>controller.Projet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Connexion</servlet-name>

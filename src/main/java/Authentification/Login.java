@@ -11,6 +11,7 @@ import java.io.PrintWriter;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import connexion.Auth;
 import connexion.Connexion;
 
 /**
@@ -38,16 +39,15 @@ public class Login extends HttpServlet {
 	        PrintWriter out = response.getWriter();
 	        
 	try {
-		 Connexion con = new Connexion();
-		con.connect();
+		Auth a=new Auth();
 		
 	//--------------------  I - // Authentification  Directeur ------------------------------------------  
 	  if (request.getServletPath().equals("/loginDirecteurs")) {        
 	    if (email == null || email.isEmpty() || motDePasse == null || motDePasse.isEmpty()) {
 	    	//  messageErreur(response);
-	      // response.sendRedirect("/loginDirecteur");
+	       response.sendRedirect("/loginDirecteurs");
 	    } else {
-	              ResultSet resultSet = con.authenticationUser(email, motDePasse,"Directeur");
+	              ResultSet resultSet = a.authenticationUser(email, motDePasse,"Directeur");
 	             if (resultSet.next()) {   
 	            	 out.println("Bonjour Directeur ");
 	             	  //response.sendRedirect("/Directeur/InterfacePrincipaleDirecteur.jsp");
@@ -62,10 +62,10 @@ public class Login extends HttpServlet {
 	//--------------------  II - // Authentification Chef de Projet ------------------------------------------
 	  else if (request.getServletPath().equals("/loginChefProjets")) {
 		    if (email == null || email.isEmpty() || motDePasse == null || motDePasse.isEmpty()) {
-		    	// response.sendRedirect("/loginChefProjet");
+		    	 response.sendRedirect("/loginChefProjets");
 		    	//messageErreur(response);
 		    } else {
-		    	 ResultSet resultSet = con.authenticationUser(email, motDePasse, "ChefProjet");
+		    	 ResultSet resultSet = a.authenticationUser(email, motDePasse, "ChefProjet");
 		            if (resultSet.next()) {   
 		            	 out.println("Bonjour ChefProjet ");
 		             	 // response.sendRedirect("/ChefProjet/InterfacePrincipaleChefProjet.jsp");
@@ -82,7 +82,7 @@ public class Login extends HttpServlet {
 		    	// response.sendRedirect("/loginDeveloppeur");
 		    	//messageErreur(response);
 		    } else {
-		    	 ResultSet resultSet = con.authenticationUser(email, motDePasse, "Developpeur");
+		    	 ResultSet resultSet = a.authenticationUser(email, motDePasse, "Developpeur");
 		            if (resultSet.next()) { 
 		            	 out.println("Bonjour Developpeur ");
 		             	 // response.sendRedirect("/Developpeur/InterfacePrincipaleDeveloppeur.jsp");

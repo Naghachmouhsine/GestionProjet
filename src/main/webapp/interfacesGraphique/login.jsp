@@ -16,7 +16,6 @@
   <div class="form-outline mb-4">
     <label class="form-label" for="email">Email </label>
     <input type="email" name="email" id="email" class="form-control" />
-  
   </div>
 
   <!-- Password input -->
