@@ -19,7 +19,7 @@ public class Connexion {
 			url = new String("jdbc:mysql://127.0.0.1:3306/gestionprojet");
 			} 
 		catch( ClassNotFoundException e) {
-				System.err.println("Erreur lors du chargement du pilote : " + e); 
+				System.err.println("Erreur lors du chargement du pilote : " + e.getMessage()); 
 			}
 		
 		}
