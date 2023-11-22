@@ -8,8 +8,13 @@
 	<classpathentry kind="src" path="src/main/java"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+<<<<<<< HEAD
+	<classpathentry kind="lib" path="C:/Program Files/Apache Software Foundation/Tomcat 10.1/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Apache Software Foundation/Tomcat 10.1/lib/mysql-connector-j-8.0.32.jar">
+=======
 	<classpathentry kind="lib" path="C:/Program Files/Apache Software Foundation/Tomcat 10.1_Tomcat10.1/lib/servlet-api.jar"/>
 	<classpathentry kind="lib" path="C:/Program Files/Apache Software Foundation/Tomcat 10.1_Tomcat10.1/lib/mysql-connector-j-8.0.32.jar">
+>>>>>>> 5e4eacf46bb8f2736ea77c6c921814f71dad72b2
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
