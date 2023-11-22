@@ -15,7 +15,7 @@
 </head>
 <body>
   <div class="d-flex ">    <!-- Debut Side Bare -->
-    <div class="main-contaier d-flex " >
+    <div class="main-contaier  d-flex " >
         <div class="sidebare " id="side-nav" >
             <div class="header-box px-2 pb-4 d-flex justify-content-between">
                 <h1 class="fs-4 mt-4 d-flex align-items-center">
