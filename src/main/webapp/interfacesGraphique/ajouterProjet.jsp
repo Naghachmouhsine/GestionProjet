@@ -11,10 +11,10 @@
   <script src="../js/bootstrap.bundle.min.js"></script>
   <script src="../js/jquery.js"></script>
   <script src="../js/all.min.js"></script>
+  <script src="../js/ClassApp/GestionProjet.js"></script>
 </head>
 <body>
-  <div class="d-flex ">
-    <!-- Debut Side Bare -->
+  <div class="d-flex ">    <!-- Debut Side Bare -->
     <div class="main-contaier d-flex " >
         <div class="sidebare " id="side-nav" >
             <div class="header-box px-2 pb-4 d-flex justify-content-between">
@@ -56,27 +56,26 @@
     <div class="contenue  flex-grow-1  mt-5 mb-5 me-5 ms-0">
       <div class="card bg-info ">
         <div class="card-body ">
-        <!-- <form action="" > -->
+     <!--  <form  name="infoProjet" > --> 
          <div class="row ">
           <div class="card CardinfoProjet  col-md-6">
             <div class="card-body">
-              <h4 class="card-title text-center">Info Projet</h4>
-              
+              <h4 class="card-title text-center">Info Projet</h4>       
                 <div class="mb-3 mt-3">
                   <label for="nom" class="form-label">Nom Projet:</label>
-                  <input type="text" class="form-control" id="nom"  name="nom">
+                  <input type="text" class="form-control InfoProjet" id="nom"  name="nom">
                 </div>
                 <div class="mb-3">
                   <label for="description">Description:</label>
-                  <textarea class="form-control" rows="5" id="description" name="description"></textarea>
+                  <textarea class="form-control InfoProjet" rows="5" id="description" name="description"></textarea>
                 </div>
                 <div class="mb-3">
                   <label for="dateDemarage" class="form-label">Date démarage:</label>
-                  <input type="date" class="form-control" id="dateDemarage"  name="dateDemarage">
+                  <input type="date" class="form-control InfoProjet" id="dateDemarage"  name="dateDemarage">
                 </div>
                 <div class="mb-3">
                   <label for="dateLivraison" class="form-label">Date Livraison:</label>
-                  <input type="date" class="form-control" id="dateLivraison"  name="dateLivraison">
+                  <input type="date" class="form-control InfoProjet" id="dateLivraison"  name="dateLivraison">
                 </div>
             </div>
           </div>
@@ -113,9 +112,9 @@
             </div>
           </div>
           <div class="d-flex justify-content-center mt-2">
-            <input type="submit" id="z" class="btn btn-primary" value="Ajouter">
+             <input class="btn btn-primary" type="submit" onclick="verfieNom('naghach')">
           </div>
-        <!-- </form> -->
+      <!--  </f   -->   
         </div>
       </div>
     </div>
