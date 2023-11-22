@@ -10,7 +10,7 @@
 <body>
 
 
-  <form action="/projet_informatique/loginChefProjets" method="POST">
+  <form action="/GestionProjet/loginChefProjets" method="POST">
   <!-- Email input -->
   <div class="content">
   <div class="form-outline mb-4">
