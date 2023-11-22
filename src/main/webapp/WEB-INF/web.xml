@@ -11,22 +11,30 @@
   </welcome-file-list>
   <servlet>
     <description></description>
-    <display-name>Tst</display-name>
-    <servlet-name>Tst</servlet-name>
-    <servlet-class>Tst</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>Tst</servlet-name>
-    <url-pattern>/Tst</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
     <display-name>Projet</display-name>
     <servlet-name>Projet</servlet-name>
-    <servlet-class>controller.Projet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Projet</servlet-name>
     <url-pattern>/Projet</url-pattern>
+   </servlet-mapping>
+  <servlet>
+    <display-name>Connexion</display-name>
+    <servlet-name>Connexion</servlet-name>
+    <servlet-class>controller.Projet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Connexion</servlet-name>
+    <url-pattern>/Connexion</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Login</display-name>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>Authentification.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
   </servlet-mapping>
 </web-app>
